@@ -1,0 +1,51 @@
+services:
+
+  backend:
+
+    build: ./backend
+
+    ports:
+
+      - "8000:8000"
+
+    depends_on:
+
+      - redis
+
+      - postgres
+
+  frontend:
+
+    build: ./frontend
+
+    ports:
+
+      - "5173:5173"
+
+    depends_on:
+
+      - backend
+
+  postgres:
+
+    image: postgres:17
+
+    environment:
+
+      POSTGRES_USER: postgres
+
+      POSTGRES_PASSWORD: Kavya@888
+
+      POSTGRES_DB: urlshortener
+
+    ports:
+
+      - "5432:5432"
+
+  redis:
+
+    image: redis:latest
+
+    ports:
+
+      - "6379:6379"
