@@ -1,64 +1,53 @@
-# 🚀 Scalable URL Shortener
+🚀 Scalable URL Shortener (Distributed Systems)
 
-A full-stack URL shortening platform built using React, FastAPI, PostgreSQL and Redis.
+A full-stack URL shortening platform built using React, FastAPI, PostgreSQL, Redis, and Docker.
 
-## Features
+The application allows users to generate short URLs, create custom aliases, set expiration dates, and track analytics efficiently.
 
-- URL shortening
-- Base62 encoding
-- Custom aliases
-- URL expiration
-- Analytics dashboard
-- Duplicate URL detection
-- Redis caching
-- Modern React UI
-
-## Tech Stack
-
+✨ Features
+🔗 URL shortening
+🏷️ Custom aliases
+⏳ Expiration dates
+📊 Analytics tracking
+⚡ Redis caching
+🔄 Duplicate URL detection
+🔢 Base62 encoding
+🐳 Docker support
+🛠️ Tech Stack
 Frontend
-
-- React
-- Tailwind CSS
-
+React
+Tailwind CSS
 Backend
-
-- FastAPI
-
+FastAPI
 Database
-
-- PostgreSQL
-
+PostgreSQL
 Caching
-
-- Redis
-
+Redis
 Containerization
-
-- Docker
-
-## Architecture
-
-React → FastAPI → Redis → PostgreSQL
-
-## Run locally
-
-Backend
-
-```bash
-uvicorn app.main:app --reload
-```
-
-Frontend
-
-```bash
-npm run dev
-```
-
 Docker
+🏗️ Architecture
+React Frontend
+       ↓
+FastAPI Backend
+       ↓
+Redis Cache
+       ↓
+PostgreSQL Database
+🚀 Run Locally
+Backend
+cd backend
 
-```bash
+venv\Scripts\activate
+
+uvicorn app.main:app --reload
+Frontend
+cd frontend
+
+npm install
+
+npm run dev
+Docker
 docker compose up
-```
 
 ## Screenshots
 
@@ -72,7 +61,16 @@ docker compose up
 
 
 
-
-## Author
+📚 Concepts Implemented
+REST APIs
+Base62 Encoding
+Redis Caching
+URL Expiration
+Custom Aliases
+Duplicate Detection
+Docker Containerization
+👩‍💻 Author
 
 Kavya Telagareddi
+
+B.Tech CSE, NIT Andhra Pradesh
