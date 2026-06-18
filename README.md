@@ -1,31 +1,52 @@
-🚀 Scalable URL Shortener (Distributed Systems)
+# 🚀 Scalable URL Shortener (Distributed Systems)
 
-A full-stack URL shortening platform built using React, FastAPI, PostgreSQL, Redis, and Docker.
+A full-stack URL shortening platform built using **React, FastAPI, PostgreSQL, Redis, and Docker**.
 
 The application allows users to generate short URLs, create custom aliases, set expiration dates, and track analytics efficiently.
 
-✨ Features
-🔗 URL shortening
-🏷️ Custom aliases
-⏳ Expiration dates
-📊 Analytics tracking
-⚡ Redis caching
-🔄 Duplicate URL detection
-🔢 Base62 encoding
-🐳 Docker support
-🛠️ Tech Stack
-Frontend
-React
-Tailwind CSS
-Backend
-FastAPI
-Database
-PostgreSQL
-Caching
-Redis
-Containerization
-Docker
-🏗️ Architecture
+---
+
+## ✨ Features
+
+* 🔗 URL shortening
+* 🏷️ Custom aliases
+* ⏳ Expiration dates
+* 📊 Analytics tracking
+* ⚡ Redis caching
+* 🔄 Duplicate URL detection
+* 🔢 Base62 encoding
+* 🐳 Docker support
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+* React
+* Tailwind CSS
+
+### Backend
+
+* FastAPI
+
+### Database
+
+* PostgreSQL
+
+### Caching
+
+* Redis
+
+### Containerization
+
+* Docker
+
+---
+
+## 🏗️ Architecture
+
+```text
 React Frontend
        ↓
 FastAPI Backend
@@ -33,21 +54,43 @@ FastAPI Backend
 Redis Cache
        ↓
 PostgreSQL Database
-🚀 Run Locally
-Backend
+```
+
+---
+
+## 🚀 Run Locally
+
+### Backend
+
+```bash
 cd backend
 
 venv\Scripts\activate
 
 uvicorn app.main:app --reload
-Frontend
+```
+
+### Frontend
+
+```bash
 cd frontend
 
 npm install
 
 npm run dev
-Docker
+```
+
+### Docker
+
+```bash
 docker compose up
+```
+
+---
+
+
+
+
 
 ## Screenshots
 
